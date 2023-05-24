@@ -2,15 +2,21 @@ import React from 'react';
 import './Footer.css';
 
 
-
 class Footer extends React.Component {
+
+  constructor(props) {
+    super(props)
+
+  }
+
+
+
   render() {
     return (
       <div className="Footer">
-        <ul>
-          {Object.values(this.props.contacts).map(item => <li>{item}</li>)}
-        </ul>
+        Footer
       </div>
+
     );
   }
 }
