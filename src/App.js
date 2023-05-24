@@ -1,29 +1,24 @@
 import React from 'react';
 import './App.css';
+import Header from './Header/Header';
+import Main from './Main/Main';
+import Footer from './Footer/Footer';
+
+const contacts = {
+  phone: "Phone",
+  email: "Email",
+  adress: "Adress"
+}
+
+const famOld = ["Maxim", "Olga", "Maria", "Andrii", "Shusha"]
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name1: "Maxim",
-      name2: "Olga",
-      name3: "Maria",
-      name4: "Andrii"
-    }
-  }
-
-  changeName = () => {
-    console.log(`You`)
-    this.setState({ name1: "M", name2: "O", name3: "M", name4: "A" })
-
-  }
   render() {
     return (
       <div className="App">
-        <ul>
-          {Object.values(this.state).map(item => <li>{item}</li>)}
-        </ul>
-        <button onClick={this.changeName}>Change</button>
+        <Header />
+        <Main family={famOld} />
+        <Footer contacts={contacts} />
       </div>
     );
   }

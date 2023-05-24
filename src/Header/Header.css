@@ -1,0 +1,9 @@
+.Header {
+  height: auto;
+  width: auto;
+  background-color: brown;
+  color: bisque;
+  font-size: 2em;
+  font-weight: 500;
+  text-decoration: underline;
+}

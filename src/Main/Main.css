@@ -1,0 +1,14 @@
+.Main {
+  height: auto;
+  width: auto;
+  color: brown;
+  background-color: bisque;
+  font-size: 2em;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+button {
+  height: 25px;
+  width: 100px;
+}
